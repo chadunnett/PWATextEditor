@@ -24,7 +24,7 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'service-worker.js',
+        swDest: 'sw.js',
       }), 
       new WorkboxPlugin.GenerateSW(),
       new WebpackPwaManifest({
