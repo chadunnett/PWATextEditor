@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Progressive Web Application: Text Editor",
   "main": "server.js",
+  "engines": {
+    "node": "16.18.0"
+  },
   "scripts": {
     "start:dev": "concurrently \"cd client && npm run build\" \"cd server && npm run server\"",
     "start": "npm run build && cd server && node server.js",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "webpack": "^5.75.0"
   }
 }
